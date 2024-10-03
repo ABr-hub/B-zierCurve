@@ -107,10 +107,6 @@ aka the beziér curve:
 
 ---
 
-# Bézier Curve Editor
-
-This project provides an interactive tool for visualizing Bézier curves.
-
 ## Usage
 
 To use the `BezierEditor` class, you can follow these steps:
