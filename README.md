@@ -41,7 +41,7 @@ This project offers an interactive Bézier curve visualizer using De Casteljau's
 *combined effect results in a simplified curve segment.* 
 
 <div style="text-align: justify; font-style: italic"> 
-Please note that, in the following example, the control points $P_1 = (x_1, y_1)$ and $P_2 = (x_1, y_1)$ are positioned at the same location for visualization purposes. If these points were not overlapping, the Bézier curve would be influenced by both points individually, creating a smoother and more complex shape. However, when they are at the same spot, their combined effect results in a simplified curve segment. </div>
+Please note that, in the following example, the control points $P_1 = (x_1, x_2)$ and $P_2 = (x_1, y_1)$ are positioned at the same location for visualization purposes. If these points were not overlapping, the Bézier curve would be influenced by both points individually, creating a smoother and more complex shape. However, when they are at the same spot, their combined effect results in a simplified curve segment. </div>
 
 
 <img src="assets\Bezier_definitions_.png" alt="Beziér definitions" width="400"/>
