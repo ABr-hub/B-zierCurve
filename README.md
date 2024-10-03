@@ -135,6 +135,12 @@ editor.run()
 You can provide a string `'sub'` when creating the class instance to switch \
 between an editor using the subdivision or not.
 
+When the class is initialized with control points such as 
+
+```python
+editor = BezierEditor([[x1, y1], [x2, y2], [x3, y3])
+```
+
 ### Sources
 [1] https://lp.uni-goettingen.de/get/text/1265 \
 [2] https://de.wikipedia.org/wiki/B%C3%A9zierkurve \
