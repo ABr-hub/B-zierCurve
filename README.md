@@ -1,6 +1,10 @@
 ## BézierCurve
 This project offers an interactive Bézier curve visualizer using De Casteljau's algorithm. Users can add, move, or delete control points, with real-time curve updates. It includes recursive subdivision to split the curve into segments for precise approximation and compares the original with the subdivided curve.
 
+Content:
+1. Usage
+2. Theory
+
 ## Usage
 
 To use the `BezierEditor` class, you can follow these steps:
