@@ -106,7 +106,7 @@ aka the beziér curve:
 <img src="assets\deCasteljau_AlgorithmPrinciple.gif" />
 
 
-**Subdivision**
+### Subdivison
 ...
 
 ---
