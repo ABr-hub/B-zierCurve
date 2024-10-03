@@ -147,7 +147,7 @@ which can be more easily managed or rendered. Here's how it works mathematically
    
    * Midpoint Calculation: \
      For $i=0,1,…,n−1$: \
-        $M_i =$ $\Large\frac{P_i+P_{i+1}}{2}$
+        $M_i = {\Large\frac{P_i+P_{i+1}}{2}}$
 
      This results in a new set of control points $M_0,M_1,…,M_{n−1}​$.
 
