@@ -133,7 +133,7 @@ editor.run()
 ```
 
 You can switch between the standard editor and the subdivision editor by passing the string \
-'sub' when creating an instance of the class.
+`'sub'` when creating an instance of the class.
 
 When the class is initialized with control points, it allows for a direct comparison between \
 the Bézier curve generated with and without subdivision in a non editable plot.
