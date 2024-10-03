@@ -45,6 +45,8 @@ This project offers an interactive Bézier curve visualizer using De Casteljau's
     <img src="assets\Bezier_definitions_calculation_.png" alt="Beziér definitions" width="400"/>
 
     &rarr; There is exactly **one** polynomial of degree 3, fullfilling these constraints \
+    *Note: Here a polynomial of degree 3 has to be evaluated since technically there are only* \
+    *3 points* ($P_1 = P_2$) 
     $p(x) = ax^3 + bx^2 + cx + d$ \
     $p'(x) = 3ax^2 + 2bx + c$ 
 
@@ -59,13 +61,13 @@ this leads to two more linear equations:
 4. $p'(x_3) = \frac{y_3 - y_2}{x_3 - x_2}$ 
 
 
-With the sample points
+With the sample points ...
 * $p_0 = (0.2, 0.2)$
 * $p_1 = (0.5, 0.8)$
 * $p_2 = (0.5, 0.8)$
 * $p_3 = (0.8, 0.2)$
 
-a solveable linear equation systen can be created to identify the coefficients of the polynomial\
+... a solveable linear equation systen can be created to identify the coefficients of the polynomial\
 aka the beziér curve: 
 
 1. $p(x_0) = y_0 \rightarrow p(0.2) = 0.2 \rightarrow 0.2 = a(0.2)^3 + b(0.2)^2 + c(0.2) + d = 0.0008a + 0.04b + 0.2c + d$ 
