@@ -112,11 +112,11 @@ In the process of calculating a Bézier curve, every control point contributes \
 to the final shape. The De Casteljau algorithm is applied once over a range of \
 parameter values $t$ (e.g., from $0$ to $1$) to compute the curve's points.\
 
-* Simple Representation
+* Simple Representation: \
   The curve is depicted as a smooth line connecting the control points, resulting in a continuous shape that
   follows the contours defined by these points.
   
-* Limited Control
+* Limited Control: \
   To alter the shape of the curve (e.g., to position it closer to or further from the control points), you must        manually adjust the positions of the control points.
 
 Bézier Curve with Recursive Subdivision
