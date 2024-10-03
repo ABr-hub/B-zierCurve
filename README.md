@@ -13,18 +13,18 @@ This project offers an interactive Bézier curve visualizer using De Casteljau's
     **Why do we need that?**
 
     * Given function: \
-    <img src="assets\Function_to_approximate_.png" alt="Function to approximate" width="600"/> \
+       <img src="assets\Function_to_approximate_.png" alt="Function to approximate" width="600"/> \
     &rarr; Now chose any number of points (e.g. 3, 5, 10; This will also be the degree \
     of the fitting polynomial) to fit a polynom and approximate the function
 
-        * 3 \
-        <img src="assets\Approx_Deg3.png" alt="Approximation of degree 3" width="600"/>
+        * 3 
+           <img src="assets\Approx_Deg3.png" alt="Approximation of degree 3" width="600"/>
         
-        * 5 \
-        <img src="assets\Approx_Deg5.png" alt="Approximation of degree 5" width="600"/>
+        * 5 
+           <img src="assets\Approx_Deg5.png" alt="Approximation of degree 5" width="600"/>
 
-        * 10 \
-        <img src="assets\Approx_Deg10.png" alt="Approximation of degree 10" width="600"/>
+        * 10 
+           <img src="assets\Approx_Deg10.png" alt="Approximation of degree 10" width="600"/>
 
         &rarr; Approximation error = **Runge's phenomenon** (polynomial strives for \
         infinity but is fixed within space through given points)
