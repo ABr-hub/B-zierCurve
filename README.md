@@ -44,7 +44,8 @@ This project offers an interactive Bézier curve visualizer using De Casteljau's
     this can be visualized as follows\
     <img src="assets\Bezier_definitions_calculation_.png" alt="Beziér definitions" width="400"/>
 
-    &rarr; There is exactly **one** polynomial of degree 3, fullfilling these constraints \
+    &rarr; There is exactly **one** polynomial of degree 3, fullfilling these constraints
+  
     *Note: Here a polynomial of degree 3 has to be evaluated since technically there are only* \
     *3 points* ($P_1 = P_2$)
   
