@@ -91,7 +91,7 @@ aka the beziér curve:
         * $P_{current}$: Current controll point
         * $P_{next}$: Next controll point
         * $t$: Paramter used to determine how much of the straight line \
-        between $P_{current}$ and $P_{next}$ (e.g. $\bar{P_0, P_1}$ or $\bar{P_2, P_3}$) \
+        between $P_{current}$ and $P_{next}$ (e.g. $\overline{P_0, P_1}$ or $\overline{P_2, P_3}$) \
         should be used \
         (This essentially influences the accuracy of the interpolated Bézier curve)
 
