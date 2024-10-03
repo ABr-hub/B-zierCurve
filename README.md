@@ -141,15 +141,15 @@ recursion depth) is reached.
 The recursive subdivision algorithm breaks down a Bézier curve into smaller segments,\
 which can be more easily managed or rendered. Here's how it works mathematically:
 
-1. Subdivision at $t=0.5$: Given a set of control points $P0,P1,…,PnP0​,P1​,…,Pn$​, you \
+1. Subdivision at $t=0.5$: Given a set of control points $P_0,P_1,…,P_n$​, you \
    can compute the midpoints of each segment formed by these control points. The new\
     points are computed as follows:
    
    * Midpoint Calculation: \
      For $i=0,1,…,n−1$: \
-        $M_i = \frac{P_i+P_{i+1}{2}
+        $M_i = \frac{P_i+P_{i+1}{2}$
 
-     This results in a new set of control points $M0,M1,…,Mn−1M0​,M1​,…,Mn−1​$.
+     This results in a new set of control points $M_0,M_1,…,M_{n−1}​$.
 
 2. Repeat Subdivision: The algorithm then applies the same process recursively to the new control points P0,M0,M1,…,Mn−1,PnP0​,M0​,M1​,…,Mn−1​,Pn​.
 
