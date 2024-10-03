@@ -6,7 +6,7 @@ This project offers an interactive Bézier curve visualizer using De Casteljau's
 * Type of spline
     * Idea of spline: Approximate a curve with many points via multiple curves of \
     few points for better fitting \
-       <img src="assets\Bezier&Spline.png" alt="Function to approximate" width="600"/> \
+       <img src="assets\Bezier&Spline.png" alt="Function to approximate" width="400"/> 
     * Key factors are the global sides of the curve and the "connections"
     * Used to describe complex free-form curves (e.g. for complex vehicle design)
 
