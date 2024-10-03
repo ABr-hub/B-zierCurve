@@ -147,15 +147,18 @@ which can be more easily managed or rendered. Here's how it works mathematically
    
    * Midpoint Calculation: \
      For $i=0,1,…,n−1$: \
-        $M_i = \frac{P_i}+P_{i+1}{2}$
+        $M_i = \frac{P_i+P_{i+1}}{2}$
 
      This results in a new set of control points $M_0,M_1,…,M_{n−1}​$.
 
-2. Repeat Subdivision: The algorithm then applies the same process recursively to the new control points P0,M0,M1,…,Mn−1,PnP0​,M0​,M1​,…,Mn−1​,Pn​.
+2. Repeat Subdivision: The algorithm then applies the same process recursively to the \
+   new control points $P_0,M_0,M_1,…,M_n−1,P_n$.
 
-3. Base Case: The recursion continues until a certain depth is reached, or until the control points are close enough that a straight line can represent them. The stopping criterion can be based on:
-        A maximum recursion depth
-        The distance between the first and last control points falling below a certain threshold
+4. Base Case: The recursion continues until a certain depth is reached, or until the \
+   control points are close enough that a straight line can represent them. The stopping \
+   criterion can be based on:
+   * A maximum recursion depth
+   * The distance between the first and last control points falling below a certain threshold
 
 ---
 
