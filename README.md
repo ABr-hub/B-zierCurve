@@ -14,8 +14,8 @@ This project offers an interactive Bézier curve visualizer using De Casteljau's
 
     * Given function: \
     <img src="assets\Function_to_approximate_.png" alt="Function to approximate" width="600"/> \
-    &rarr; Now chose any number of points (e.g. 3, 5, 10; This will also be the degree of the fitting polynomial) \
-    to fit a polynom and approximate the function
+    &rarr; Now chose any number of points (e.g. 3, 5, 10; This will also be the degree \
+    of the fitting polynomial) to fit a polynom and approximate the function
 
         * 3 \
         <img src="assets\Approx_Deg3.png" alt="Approximation of degree 3" width="600"/>
