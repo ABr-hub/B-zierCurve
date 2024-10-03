@@ -105,6 +105,10 @@ aka the beziér curve:
 
 <img src="assets\deCasteljau_AlgorithmPrinciple.gif" />
 
+
+**Subdivision**
+...
+
 ---
 
 ## Usage
@@ -127,6 +131,9 @@ editor = BezierEditor()
 # Run the editor to start visualizing Bézier curves
 editor.run()
 ```
+
+You can provide a string `'sub'` when creating the class instance to switch \
+between an editor using the subdivision or not.
 
 ### Sources
 [1] https://lp.uni-goettingen.de/get/text/1265 \
