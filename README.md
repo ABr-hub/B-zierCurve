@@ -136,6 +136,28 @@ recursion depth) is reached.
   With recursive subdivision, the curve can be finely adjusted as needed. It provides \
   better visualization of changes in shape when the control points are moved.
 
+**Algorithm**
+
+The recursive subdivision algorithm breaks down a Bézier curve into smaller segments,\
+which can be more easily managed or rendered. Here's how it works mathematically:
+
+1. Subdivision at $t=0.5$: Given a set of control points $P0,P1,…,PnP0​,P1​,…,Pn$​, you \
+   can compute the midpoints of each segment formed by these control points. The new\
+    points are computed as follows:
+   
+   * Midpoint Calculation: \
+     For $i=0,1,…,n−1$: \
+        Mi=Pi+Pi+12
+        Mi​=2Pi​+Pi+1​​
+
+This results in a new set of control points $M0,M1,…,Mn−1M0​,M1​,…,Mn−1​$.
+
+2. Repeat Subdivision: The algorithm then applies the same process recursively to the new control points P0,M0,M1,…,Mn−1,PnP0​,M0​,M1​,…,Mn−1​,Pn​.
+
+3. Base Case: The recursion continues until a certain depth is reached, or until the control points are close enough that a straight line can represent them. The stopping criterion can be based on:
+        A maximum recursion depth
+        The distance between the first and last control points falling below a certain threshold
+
 ---
 
 ## Usage
