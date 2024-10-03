@@ -105,6 +105,32 @@ aka the beziér curve:
 
 <img src="assets\deCasteljau_AlgorithmPrinciple.gif" />
 
+---
+
+# Bézier Curve Editor
+
+This project provides an interactive tool for visualizing Bézier curves.
+
+## Usage
+
+To use the `BezierEditor` class, you can follow these steps:
+
+1. Import the class.
+2. Create an instance of the class.
+3. Interact with the editor.
+
+### Example
+
+```python
+# Import the BezierEditor class
+from bezier_editor import BezierEditor
+
+# Create an instance of the BezierEditor
+editor = BezierEditor()
+
+# Run the editor to start visualizing Bézier curves
+editor.run()
+
 
 ### Sources
 [1] https://lp.uni-goettingen.de/get/text/1265 \
