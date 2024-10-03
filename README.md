@@ -86,7 +86,7 @@ aka the beziér curve:
 ### Theory
 * Linear interpolation:
     * Each step interpolates between two neighboring points (e.g. $P_0$ & $P_1$ or $P_2$ & $P_3$)
-    * $P_{new}=(1-t) \cdot P_(current) + t \cdot P_{next}$
+    * $P_{new}=(1-t) \cdot P_{current} + t \cdot P_{next}$
         * $P_{new}: $ Point used to linearly interpolate  
         * $P_{current}: $ Current controll point
         * $P_{next}: $ Next controll point
