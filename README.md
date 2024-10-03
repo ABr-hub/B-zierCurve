@@ -147,10 +147,9 @@ which can be more easily managed or rendered. Here's how it works mathematically
    
    * Midpoint Calculation: \
      For $i=0,1,…,n−1$: \
-        Mi=Pi+Pi+12
-        Mi​=2Pi​+Pi+1​​
+        $M_i = \frac{P_i+P_{i+1}{2}
 
-This results in a new set of control points $M0,M1,…,Mn−1M0​,M1​,…,Mn−1​$.
+     This results in a new set of control points $M0,M1,…,Mn−1M0​,M1​,…,Mn−1​$.
 
 2. Repeat Subdivision: The algorithm then applies the same process recursively to the new control points P0,M0,M1,…,Mn−1,PnP0​,M0​,M1​,…,Mn−1​,Pn​.
 
