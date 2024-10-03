@@ -104,3 +104,10 @@ aka the beziér curve:
 **Working principle**
 
 <img src="assets\deCasteljau_AlgorithmPrinciple.gif" />
+
+
+### Sources
+[1] https://lp.uni-goettingen.de/get/text/1265 \
+[2] https://de.wikipedia.org/wiki/B%C3%A9zierkurve \
+[2] https://de.wikipedia.org/wiki/De-Casteljau-Algorithmus \
+[3] http://www.dma.ufg.ac.at/app/link/Grundlagen%3A2D-Grafik/module/13079?step=all
