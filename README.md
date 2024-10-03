@@ -130,7 +130,7 @@ editor = BezierEditor()
 
 # Run the editor to start visualizing Bézier curves
 editor.run()
-
+```
 
 ### Sources
 [1] https://lp.uni-goettingen.de/get/text/1265 \
