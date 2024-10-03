@@ -17,13 +17,13 @@ This project offers an interactive Bézier curve visualizer using De Casteljau's
     &rarr; Now chose any number of points (e.g. 3, 5, 10; This will also be the degree \
     of the fitting polynomial) to fit a polynom and approximate the function
 
-        * 3 
+        * 3:\
            <img src="assets\Approx_Deg3.png" alt="Approximation of degree 3" width="600"/>
         
-        * 5 
+        * 5:\ 
            <img src="assets\Approx_Deg5.png" alt="Approximation of degree 5" width="600"/>
 
-        * 10 
+        * 10:\ 
            <img src="assets\Approx_Deg10.png" alt="Approximation of degree 10" width="600"/>
 
         &rarr; Approximation error = **Runge's phenomenon** (polynomial strives for \
