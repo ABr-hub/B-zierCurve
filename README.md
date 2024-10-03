@@ -141,7 +141,7 @@ the Bézier curve generated with and without subdivision in a non editable plot.
 ```python
 editor = BezierEditor([[x1, y1], [x2, y2], [x3, y3])
 ```
-<img src="assets\FixedComparison.png" alt="Function to approximate" width="800"/> 
+<img src="assets\FixedComparison.png" alt="Function to approximate" width="1000"/> 
 
 
 ### Sources
