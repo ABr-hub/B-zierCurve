@@ -132,10 +132,11 @@ editor = BezierEditor()
 editor.run()
 ```
 
-You can provide a string `'sub'` when creating the class instance to switch \
-between an editor using the subdivision or not.
+You can switch between the standard editor and the subdivision editor by passing the string \
+'sub' when creating an instance of the class.
 
-When the class is initialized with control points such as 
+When the class is initialized with control points, it allows for a direct comparison between \
+the Bézier curve generated with and without subdivision in a non editable plot.
 
 ```python
 editor = BezierEditor([[x1, y1], [x2, y2], [x3, y3])
