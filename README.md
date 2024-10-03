@@ -30,3 +30,43 @@ This project offers an interactive Bézier curve visualizer using De Casteljau's
         = Not all functions can be described with a simple polynomial. To \
         be able to create complex forms (e.g. for design) other approximation methods \
         need to be evaluated.
+
+
+## Bezier definitions & calculation [1], [2]
+
+<img src="assets\Bezier_definitions_.png" alt="Beziér definitions" width="400"/>
+
+**Constraints**
+* $(x_0, y_0)$ & $(x_3, y_3)$ are the points through which the curve has to fit
+* Point(s) $(x_1, y_1)$ & $(x_2, y_2)$ controll the *gradient* at the points $(x_0, y_0)$ & $(x_3, y_3)$\
+    this can be visualized as follows\
+    <img src="assets\Bezier_definitions_calculation_.png" alt="Beziér definitions" width="400"/>
+
+    &rarr; There is exactly **one** polynomial of degree 3, fullfilling these constraints \
+    $p(x) = ax^3 + bx^2 + cx + d$ \
+    $p'(x) = 3ax^2 + 2bx + c$ 
+
+Together with the points $(x_0, y_0)$ & $(x_3, y_3)$ the polynomial has to fulfill:
+1. $p(x_0) = y_0$ 
+2. $p(x_3) = y_3$ 
+
+Since the points $(x_1, y_1)$ & $(x_2, y_2)$ controll the gradient of the points $(x_0, y_0)$ & $(x_3, y_3)$ \
+this leads to two more linear equations:
+
+3. $p'(x_0) = \frac{y_1 - y_0}{x_1 - x_0}$ 
+4. $p'(x_3) = \frac{y_3 - y_2}{x_3 - x_2}$ 
+
+
+With the sample points
+* $p_0 = (0.2, 0.2)$
+* $p_1 = (0.5, 0.8)$
+* $p_2 = (0.5, 0.8)$
+* $p_3 = (0.8, 0.2)$
+
+a solveable linear equation systen can be created to identify the coefficients of the polynomial\
+aka the beziér curve: 
+
+1. $p(x_0) = y_0 \rightarrow p(0.2) = 0.2 \rightarrow 0.2 = a(0.2)^3 + b(0.2)^2 + c(0.2) + d = 0.0008a + 0.04b + 0.2c + d$ 
+2. $p(x_3) = y_3 \rightarrow p(0.8) = 0.2 \rightarrow 0.2 = ...$
+3. $p'(x_0) = \frac{y_1 - y_0}{x_1 - x_0} \rightarrow = 0.2 = \frac{0.8 - 0.2}{0.5 - 0.2} \rightarrow 2 = 0.12a^2 + 0.4b + c$
+4. $p'(x_0) = \frac{y_3 - y_2}{x_3 - x_2} \rightarrow = 0.2 = \frac{0.2 - 0.8}{0.8 - 0.5} \rightarrow ... $
