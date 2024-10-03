@@ -19,10 +19,8 @@ This project offers an interactive Bézier curve visualizer using De Casteljau's
 
         * 3:\
            <img src="assets\Approx_Deg3.png" alt="Approximation of degree 3" width="600"/>
-        
         * 5:\ 
            <img src="assets\Approx_Deg5.png" alt="Approximation of degree 5" width="600"/>
-
         * 10:\ 
            <img src="assets\Approx_Deg10.png" alt="Approximation of degree 10" width="600"/>
 
