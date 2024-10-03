@@ -33,7 +33,6 @@ This project offers an interactive Bézier curve visualizer using De Casteljau's
 
 
 ## Bezier definitions & calculation [1], [2]
-
 *Please note that, in the following example, the control points* $P_1 = (x_1, y_1)$ *and* $P_2 = (x_1, y_1)$ *are positioned at the same location for visualization purposes. If these points were not overlapping, the Bézier curve would be influenced by both points individually, creating a smoother and more complex shape. However, when they are at the same spot, their combined effect results in a simplified curve segment.* 
 
 <img src="assets\Bezier_definitions_.png" alt="Beziér definitions" width="400"/>
@@ -76,3 +75,32 @@ aka the beziér curve:
 2. $p(x_3) = y_3 \rightarrow p(0.8) = 0.2 \rightarrow 0.2 = ...$
 3. $p'(x_0) = \frac{y_1 - y_0}{x_1 - x_0} \rightarrow = 0.2 = \frac{0.8 - 0.2}{0.5 - 0.2} \rightarrow 2 = 0.12a^2 + 0.4b + c$
 4. $p'(x_0) = \frac{y_3 - y_2}{x_3 - x_2} \rightarrow = 0.2 = \frac{0.2 - 0.8}{0.8 - 0.5} \rightarrow ... $
+
+
+## DeCasteljau Algorithm [3], [4]
+* Used to compute a point on a Bézier curve in real applications
+* Better suitable for computer calculation because numerically more stable
+* Idea: Intelligent combination of straight lines returns the bezier curve
+
+
+### Theory
+* Linear interpolation:
+    * Each step interpolates between two neighboring points (e.g. $P_0$ & $P_1$ or $P_2$ & $P_3$)
+    * $P_{new}=(1-t) \cdot P_(current) + t \cdot P_{next}$
+        * $P_{new}: $ Point used to linearly interpolate  
+        * $P_{current}: $ Current controll point
+        * $P_{next}: $ Next controll point
+        * $t: $ Paramter used to determine how much of the straight line \
+        between $P_{current}$ and $P_{next}$ (e.g. $\overline{P_0, P_1}$ or $\overline{P_2, P_3}$) \
+        should be used \
+        (This essentially influences the accuracy of the interpolated Bézier curve)
+
+    $\Rightarrow$ This interpolation creates a new point between each neighboring \
+    pair of points. This process is repeated until there is only one point left \
+    on the curve.
+    (How many times this interpolation has to be repeated is dependend on the \
+    amout of controll points).
+
+**Working principle**
+
+<img src="assets\deCasteljau_AlgorithmPrinciple.gif" />
