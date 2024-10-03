@@ -1,6 +1,47 @@
 ## BézierCurve
 This project offers an interactive Bézier curve visualizer using De Casteljau's algorithm. Users can add, move, or delete control points, with real-time curve updates. It includes recursive subdivision to split the curve into segments for precise approximation and compares the original with the subdivided curve.
 
+## Usage
+
+To use the `BezierEditor` class, you can follow these steps:
+
+1. Import the class.
+2. Create an instance of the class.
+3. Interact with the editor.
+
+### Example
+
+```python
+# Import the BezierEditor class
+from bezier_editor import BezierEditor
+
+# Create an instance of the BezierEditor
+editor = BezierEditor()
+
+# Run the editor to start visualizing Bézier curves
+editor.run()
+```
+<img src="assets\bezier_demo.gif" />
+
+You can switch between the standard editor and the subdivision editor by passing the string \
+`'sub'` when creating an instance of the class.
+
+```python
+editor = BezierEditor('sub')
+```
+
+<img src="assets\bezier_sub_demo.gif" />
+
+When the class is initialized with control points, it allows for a direct comparison between \
+the Bézier curve generated with and without subdivision in a non editable plot.
+
+```python
+editor = BezierEditor([[x1, y1], [x2, y2], [x3, y3]])
+```
+<img src="assets\FixedComparison.png" alt="Function to approximate" width="1000"/> 
+
+---
+
 # Bezier Curve in general & motivation [1]
 
 * Type of spline
@@ -161,46 +202,6 @@ which can be more easily managed or rendered. Here's how it works mathematically
    * The distance between the first and last control points falling below a certain threshold
 
 ---
-
-## Usage
-
-To use the `BezierEditor` class, you can follow these steps:
-
-1. Import the class.
-2. Create an instance of the class.
-3. Interact with the editor.
-
-### Example
-
-```python
-# Import the BezierEditor class
-from bezier_editor import BezierEditor
-
-# Create an instance of the BezierEditor
-editor = BezierEditor()
-
-# Run the editor to start visualizing Bézier curves
-editor.run()
-```
-<img src="assets\bezier_demo.gif" />
-
-You can switch between the standard editor and the subdivision editor by passing the string \
-`'sub'` when creating an instance of the class.
-
-```python
-editor = BezierEditor('sub')
-```
-
-<img src="assets\bezier_sub_demo.gif" />
-
-When the class is initialized with control points, it allows for a direct comparison between \
-the Bézier curve generated with and without subdivision in a non editable plot.
-
-```python
-editor = BezierEditor([[x1, y1], [x2, y2], [x3, y3]])
-```
-<img src="assets\FixedComparison.png" alt="Function to approximate" width="1000"/> 
-
 
 ### Sources
 [1] https://lp.uni-goettingen.de/get/text/1265 \
