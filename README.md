@@ -120,16 +120,21 @@ parameter values $t$ (e.g., from $0$ to $1$) to compute the curve's points.
   To alter the shape of the curve (e.g., to position it closer to or further from \
   the control points), you must manually adjust the positions of the control points.
 
-Bézier Curve with Recursive Subdivision
+**Bézier Curve with Recursive Subdivision:**
 
-    Segmentation:
-    In recursive subdivision, the curve is divided into smaller segments. At each point tt, the curve is further subdivided into two new curves until a certain depth (maximum recursion depth) is reached.
+Segmentation: \
+In recursive subdivision, the curve is divided into smaller segments. At each point $t$,\
+the curve is further subdivided into two new curves until a certain depth (maximum \
+recursion depth) is reached.
 
-    More Detailed Representation:
-    This results in more points representing the curve, leading to a more detailed and precise curve. The subdivision allows for better control over the shape of the curve, as it brings the curve closer to the positions of the control points.
+* More Detailed Representation: \
+  This results in more points representing the curve, leading to a more detailed and \
+  precise curve. The subdivision allows for better control over the shape of the curve, \
+  as it brings the curve closer to the positions of the control points.
 
-    Enhanced Customizability:
-    With recursive subdivision, the curve can be finely adjusted as needed. It provides better visualization of changes in shape when the control points are moved.
+* Enhanced Customizability: \
+  With recursive subdivision, the curve can be finely adjusted as needed. It provides \
+  better visualization of changes in shape when the control points are moved.
 
 ---
 
