@@ -34,9 +34,9 @@ This project offers an interactive Bézier curve visualizer using De Casteljau's
 
 ## Bezier definitions & calculation [1], [2]
 
-*Please note that, in the following example, the control points $P_1$ and $P_2$ are* \
+*Please note that, in the following example, the control points* $P_1$ *and* $P_2$ *are* \
 *positioned at the same location for visualization purposes. If these points were not* \
-overlapping, the Bézier curve would be influenced by both points individually, creating* \
+*overlapping, the Bézier curve would be influenced by both points individually, creating* \
 *a smoother and more complex shape. However, when they are at the same spot, their* \
 *combined effect results in a simplified curve segment.* 
 
