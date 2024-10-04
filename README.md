@@ -78,7 +78,7 @@ editor = BezierEditor([[x1, y1], [x2, y2], [x3, y3]])
 
 
 ## Bezier definitions & calculation [1], [2]
-*Please note that, in the following example, the control points* $P_1 = (x_1, y_1)$ *and* $P_2 = (x_1, y_1)$ *are positioned at the same location for visualization purposes. If these points were not overlapping, the Bézier curve would be influenced by both points individually, creating a smoother and more complex shape. However, when they are at the same spot, their combined effect results in a simplified curve segment.* 
+*Please note that, in the following example, the control points* $P_1 = (x_1, y_1)$ *and* $P_2 = (x_1, y_1)$ *are positioned at the same location for visualization and generalization purposes. If these points were not overlapping, the Bézier curve would be influenced by both points individually, creating a smoother and more complex shape. However, when they are at the same spot, their combined effect results in a simplified curve segment.* 
 
 <img src="assets\Bezier_definitions_.png" alt="Beziér definitions" width="400"/>
 
