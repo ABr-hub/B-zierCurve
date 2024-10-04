@@ -114,7 +114,7 @@ With the sample points ...
 * $p_3 = (0.8, 0.2)$
 
 ... a solveable linear equation systen can be created to identify the coefficients of the polynomial\
-aka the beziér curve: 
+aka the Beziér curve: 
 
 1. $p(x_0) = y_0 \rightarrow p(0.2) = 0.2 \rightarrow 0.2 = a(0.2)^3 + b(0.2)^2 + c(0.2) + d = 0.0008a + 0.04b + 0.2c + d$ 
 2. $p(x_3) = y_3 \rightarrow p(0.8) = 0.2 \rightarrow 0.2 = ...$
